@@ -27,9 +27,10 @@
         
         <nav class="navbar">
             <a href="index.html" style="--i:1" class="active">Home</a>
-            <a href="#" style="--i:2">Section_Name</a>
-            <a href="#" style="--i:3">Section_Name</a>
-            <a href="#" style="--i:4">Section_Name</a>
+            <a href="#about" style="--i:2">About Me</a>
+            <a href="#skills" style="--i:3">Skilss</a>
+            <a href="#work" style="--i:4">Projects</a>
+            <a href="#contact" style="--i:5">Contact</a>
         </nav>
     </header>
 
@@ -39,16 +40,16 @@
             <h3>Hello, my name is</h3>
             <h1>Your Name</h1>
             <!--Animated Text-->
-            <h3></h3>
-            <p></p>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>Input introduction text here</p>
             <!--Personal Website Links-->
             <div class="social-media">
-                <a href="#" ><i class='#'></i></a> <!--LinkedIn-->
-                <a href="#" ><i class='#'></i></a> <!--GitHub-->
-                <a href="#" ><i class='#'></i></a> <!--Resume Download-->
+                <a href="#" target="_blank"><i class='bx bxl-linkedin'></i></a> <!--LinkedIn-->
+                <a href="#" target="_blank"><i class='bx bxl-github'></i></a> <!--GitHub-->
+                <a href="#"><i class='bx bxs-file-pdf' onclick="downloadFile()"></i></a> <!--Resume Download-->
             </div>
             <!--Link to About Me Section-->
-            <a href="#" class="#">Learn More About Me</a>
+            <a href="#about" class="btn">Learn More About Me</a>
         </div>
         <!--Floating Image-->
         <div class="home-img">
@@ -59,12 +60,15 @@
     <!--About Me Section-->
     <section class="about" id="about">
         <div class="about-img">
-            <img src="#" alt="Portrait of YourName">
+            <img src="images/coms3.jpg" alt="Portrait of YourName">
         </div>
         <div class="about-content">
             <h4 class="heading">Title <span>Title</span></h4>
             <h3>Title</h3>
-            <p>About ME
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Libero iusto perspiciatis sint incidunt enim inventore 
+                architecto, ipsam soluta? Sed molestiae ducimus odit numquam 
+                neque delectus accusamus quasi similique voluptatibus reiciendis.
             </p>
         </div>
     </section>
@@ -76,11 +80,32 @@
             <!--Programming Languages-->
             <div class="skills-box">
                 <i class='bx bx-code-alt'></i>
+                <h3>Languages</h3>
+                <ul>
+                    <li>C#</li>
+                    <li>C++</li>
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>GSC</li>
+                </ul>
             </div>
 
             <!--Software-->
             <div class="skills-box">
-                <!--TODO: Fill in with Software Applications-->
+                <i class='bx bx-cog'></i>
+                <h3>Tools</h3>
+                <ul>
+                    <li>Jira</li>
+                    <li>GitHub</li>
+                    <li>Adobe Suite</li>
+                    <li>Maya</li>
+                    <li>Unity</li>
+                    <li>Perforce</li>
+                    <li>VisualStudio</li>
+                    <li>VS Code</li>
+                    <li>Twine</li>
+                </ul>
             </div>
 
             <!--Education-->
@@ -88,6 +113,12 @@
                 <i class='bx bx-book-bookmark'></i>
                 <h3>Education</h3>
                 <ul id="education">
+                    <li>Rochester Institute of Technology</li>
+                    <li>Major: Game Design and Development</li>
+                    <li>Minor: Creative Writing</li>
+                    <li>Expected Graduation: 2024</li>
+                    <li>GPA: 3.0</li>
+                    <li>RIT Trustee Scholorship for transfer students with exceptional academic records</li>
                 </ul>
             </div>
         </div>
@@ -109,7 +140,7 @@
                 <!--Project 1 Name-->
                 <div class="swiper-slide"> <!--portBox-->
                     <div class="swiper-slide">
-                        <img src="images/beingHuman.png" alt="">
+                        <img src="images/coms2.jpg" alt=""> <!--Swiper Image-->
                         <!--Slide Up Overlay-->
                         <div class="project-layer">
                             <h4>Project Title</h4>
@@ -118,14 +149,47 @@
                                 Similique et fugit alias nisi, quis pariatur tenetur, maxime fuga enim iusto 
                                 sunt ea consequuntur earum facilis harum, itaque sequi?
                             </p>
-                            <a href="#"><i class='bx bx-link-external'></i></a>
+                            <!--Link to project page-->
+                            <a href="portfolioWork/placeholderProject.html"><i class='bx bx-link-external'></i></a>
                         </div>
                     </div>
                 </div>
 
                 <!--Project 2 Name-->
+                <div class="swiper-slide"> <!--portBox-->
+                    <div class="swiper-slide">
+                        <img src="images/coms4.jpg" alt=""> <!--Swiper Image-->
+                        <!--Slide Up Overlay-->
+                        <div class="project-layer">
+                            <h4>Project Title</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, mollitia! 
+                                Similique et fugit alias nisi, quis pariatur tenetur, maxime fuga enim iusto 
+                                sunt ea consequuntur earum facilis harum, itaque sequi?
+                            </p>
+                            <!--Link to project page-->
+                            <a href="#"><i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+                </div>
 
                 <!--Project 3 Name-->
+                <div class="swiper-slide"> <!--portBox-->
+                    <div class="swiper-slide">
+                        <img src="images/coms1.jpg" alt=""> <!--Swiper Image-->
+                        <!--Slide Up Overlay-->
+                        <div class="project-layer">
+                            <h4>Project Title</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, mollitia! 
+                                Similique et fugit alias nisi, quis pariatur tenetur, maxime fuga enim iusto 
+                                sunt ea consequuntur earum facilis harum, itaque sequi?
+                            </p>
+                            <!--Link to project page-->
+                            <a href="#"><i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
@@ -133,9 +197,78 @@
             <div class="swiper-pagination"></div>
         </div>
         
-        <!--Further Sections Below-->
+        <!--Further Sections Below: You can duplicate the different swiper sections like so-->
+        <div class="swiper" class="portfolio"> 
 
-    </section>
+            <!--Swiper Title-->
+            <div class="portfolio-header">
+                <h4>Games</h4>
+            </div>
+
+            <!--Swiper Wrapper and the slides-->
+            <div class="swiper-wrapper"><!--container-->
+
+                <!--Project 1 Name-->
+                <div class="swiper-slide"> <!--portBox-->
+                    <div class="swiper-slide">
+                        <img src="images/coms2.jpg" alt=""> <!--Swiper Image-->
+                        <!--Slide Up Overlay-->
+                        <div class="project-layer">
+                            <h4>Project Title</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, mollitia! 
+                                Similique et fugit alias nisi, quis pariatur tenetur, maxime fuga enim iusto 
+                                sunt ea consequuntur earum facilis harum, itaque sequi?
+                            </p>
+                            <!--Link to project page-->
+                            <a href="#"><i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Project 2 Name-->
+                <div class="swiper-slide"> <!--portBox-->
+                    <div class="swiper-slide">
+                        <img src="images/coms4.jpg" alt=""> <!--Swiper Image-->
+                        <!--Slide Up Overlay-->
+                        <div class="project-layer">
+                            <h4>Project Title</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, mollitia! 
+                                Similique et fugit alias nisi, quis pariatur tenetur, maxime fuga enim iusto 
+                                sunt ea consequuntur earum facilis harum, itaque sequi?
+                            </p>
+                            <!--Link to project page-->
+                            <a href="#"><i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Project 3 Name-->
+                <div class="swiper-slide"> <!--portBox-->
+                    <div class="swiper-slide">
+                        <img src="images/coms1.jpg" alt=""> <!--Swiper Image-->
+                        <!--Slide Up Overlay-->
+                        <div class="project-layer">
+                            <h4>Project Title</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, mollitia! 
+                                Similique et fugit alias nisi, quis pariatur tenetur, maxime fuga enim iusto 
+                                sunt ea consequuntur earum facilis harum, itaque sequi?
+                            </p>
+                            <!--Link to project page-->
+                            <a href="#"><i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--Visual representation of which slide the user is on-->
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </section> <!--End of Carisole/Swiper section-->
 
     <!--Contact Section-->
     <section class="contact" id="contact">
@@ -147,6 +280,8 @@
         <form action="https://getform.io/f/db83deb4-ed4f-42ef-9297-973ed7b9caa7" method="POST">
             <!--Top Input Box: User Name and Email Address-->
             <div class="input-box">
+                <input type="text" name="name" placeholder="Full Name">
+                <input type="email"  name="email" placeholder="Email Address">
             </div>
 
             <!--Subject Input Box: Subject line of the message-->
@@ -158,7 +293,7 @@
             <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
 
             <!--Submit Button-->
-            <input type="#" value="#" class="btn">
+            <input type="submit" value="Send Message" class="btn">
         </form>
     </section>
 
@@ -166,6 +301,7 @@
     <section class="footer">
         <!--Copyrights go here-->
         <div class="footer-text">
+            <p>Copyright &copy; 2023 by Your Name | All Rights Reserved</p>
         </div>
         <!--Button to go Home-->
         <div class="footer-icon">

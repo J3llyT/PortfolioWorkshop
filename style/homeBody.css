@@ -19,13 +19,23 @@
     justify-content: center;
     align-items: center;
     padding-top: 2rem;
-    padding-bottom: -5rem;
+    margin-bottom: 5rem;
 }
 
 .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 70rem;
+    height: 39.5rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
 }
 
 .swiper-slide img {
+    display: block;
+    width: 100%;
+    transition: .5s ease;
 }
 
 /*Increase the size of the image*/
@@ -46,7 +56,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background:linear-gradient(rgba(0, 0, 0, 0.56), rgb(122, 53, 11));
+    /*You can change the color by changing the rgb values*/
+    background:linear-gradient(rgba(0, 0, 0, 0.56), rgb(199, 93, 11));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,14 +75,14 @@
     margin: .3rem 0 1rem;
 }
 
-/*TODO inside*/
 .project-layer a{
     display:inline-flex;
     justify-content: center;
     align-items: center;
     width: 5rem;
     height: 5rem;
-    /*TODO: SET THE BACKGROUND COLOR AND RADIUS*/
+    background: var(--text-color) ;
+    border-radius: 50%;
 }
 
 .project-layer a i{
@@ -106,10 +117,11 @@
     border-radius: .8rem;
     margin: .7rem 0;
 }
-/*TODO: DISABLE RESIZING THE TEXT AREA*/
-/*.contact form textarea {
+/*DISABLE RESIZING THE TEXT AREA*/
+.contact form textarea {
     resize: none;
-}*/
+}
+
 .contact form .btn {
     margin: 2rem;
     cursor: pointer;

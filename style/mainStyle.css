@@ -15,10 +15,10 @@
 
 /*VARIABLES - Set up our own color variables to reference them later*/
 :root{
-    --bg-color: #ffffff;
-    --second-bg-color:  #323235;
+    --bg-color: #4e4e4e;
+    --second-bg-color:  #27272c;
     --text-color: #fdfdfd;
-    --main-color: #6f7d7f;
+    --main-color: rgb(17, 54, 107);
     --main-shadow-color: rgba(17, 18, 19, 0.675);
     --main-trans-color:rgba(46, 51, 52, 0.62);
 }
@@ -41,9 +41,11 @@ body {
     color: var(--text-color);
 }
 
-/*TODO: SET THE SECTION SIZE*/
-/*section:not(.footer){
-}*/
+/*SET THE SECTION SIZE and exclude the footer*/
+section:not(.footer){
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
 
 /**********************************************
         T E X T     S T Y L I N G
